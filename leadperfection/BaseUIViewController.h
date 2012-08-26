@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoadingOverlay.h"
-#import "ErrorOverlay.h"
+#import <QuartzCore/QuartzCore.h>  
 #import "MBProgressHUD.h"
 #import "UserInfo.h"
+#import "JTRevealSidebarV2Delegate.h"
+#import "SidebarViewController.h"
 
-@interface BaseUIViewController : UIViewController <ErrorOverlayDelegate,MBProgressHUDDelegate> {
-    LoadingOverlay *loadingOverlay;
-    ErrorOverlay *errorOverlay;
+@class SidebarViewController;
+
+@interface BaseUIViewController : UIViewController <MBProgressHUDDelegate,UITableViewDataSource, UITableViewDelegate, JTRevealSidebarV2Delegate, SidebarViewControllerDelegate> {
     MBProgressHUD *HUD;
 }
 
@@ -22,11 +23,8 @@
 
 -(void)setUserInfo:(UserInfo*)userInfo;
 -(UserInfo*)getUserInfo;
-
-- (void)startActivityIndicator;
-- (void)stopActivityIndicator;
-- (void)setupDefaultError:(BOOL)delegate;
-- (void)showError;
 - (void)loadDefaults;
+
+@property (nonatomic, strong) SidebarViewController *leftSidebarViewController;
 
 @end

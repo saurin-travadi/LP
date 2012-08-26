@@ -10,17 +10,15 @@
 #import "AppDelegate.h"
 #import "SFHFKeychainUtils.h"
 #import "LoginViewController.h"
+#import "UIViewController+JTRevealSidebarV2.h"
+#import "UINavigationItem+JTRevealSidebarV2.h"
+#import "JTRevealSidebarV2Delegate.h"
+
 
 @implementation BaseUIViewController
 
 @synthesize baseUrl;
-
-- (NSString *)filePath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"LocalSettings.plist"];
-    return filePath;
-}
+@synthesize leftSidebarViewController;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,24 +29,23 @@
 
     }
     return self;
-
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self loadDefaults];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ButtonMenu.png"]  style:UIBarButtonItemStyleBordered target:self action:@selector(revealLeftSidebar:)];
+    self.navigationItem.revealSidebarDelegate = self;
+    
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    loadingOverlay = nil;
-    errorOverlay = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    errorOverlay.view.hidden = NO;
-    loadingOverlay.view.hidden = NO;
     
     [super viewWillAppear:animated];
 }
@@ -60,37 +57,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-#pragma -
-#pragma mark - Activity Indicators
-
-- (void)startActivityIndicator {
-    [((AppDelegate *) [[UIApplication sharedApplication] delegate]).window addSubview:loadingOverlay.view];
-    self.tabBarController.tabBar.userInteractionEnabled = NO;
-}
-
-- (void)stopActivityIndicator {
-    [loadingOverlay.view removeFromSuperview];
-    self.tabBarController.tabBar.userInteractionEnabled = YES;
-}
-
-#pragma -
-#pragma mark - Error Overlay
-
-- (void)setupDefaultError:(BOOL)delegate {
-    [errorOverlay setText:@"Network Error" body:@"Unable to connect to server. Please check your network connection."];
-    errorOverlay.currentTabBar = self.tabBarController.tabBar;
-    
-    if (delegate && [self respondsToSelector:@selector(ErrorOverlayDismissed)]) {
-        [errorOverlay setDelegate:self];
-    }
-}
-
-- (void)showError {
-    [((AppDelegate *) [[UIApplication sharedApplication] delegate]).window addSubview:errorOverlay.view];
-    self.tabBarController.tabBar.userInteractionEnabled = NO;
-}
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -106,6 +72,59 @@
     [HUD removeFromSuperview];
 	HUD = nil;
 }
+
+#pragma mark JTRevealSidebarDelegate
+
+// This is an examle to configure your sidebar view through a custom UIViewController
+- (UIView *)viewForLeftSidebar {
+    // Use applicationViewFrame to get the correctly calculated view's frame
+    // for use as a reference to our sidebar's view 
+    CGRect viewFrame = self.navigationController.applicationViewFrame;
+    UITableViewController *controller = self.leftSidebarViewController;
+    if ( ! controller) {
+        self.leftSidebarViewController = [[SidebarViewController alloc] init];
+        self.leftSidebarViewController.sidebarDelegate = self;
+        controller = self.leftSidebarViewController;
+        controller.title = @"Options";
+    }
+    controller.view.frame = CGRectMake(0, viewFrame.origin.y, 270, viewFrame.size.height);
+    controller.view.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
+    return controller.view;
+}
+
+// Optional delegate methods for additional configuration after reveal state changed
+- (void)didChangeRevealedStateForViewController:(UIViewController *)viewController {
+    // Example to disable userInteraction on content view while sidebar is revealing
+    if (viewController.revealedState == JTRevealedStateNo) {
+        self.view.userInteractionEnabled = YES;
+    } else {
+        self.view.userInteractionEnabled = NO;
+    }
+}
+
+#pragma mark SidebarViewControllerDelegate
+
+- (void)sidebarViewController:(SidebarViewController *)sidebarViewController didSelectObject:(NSObject *)object atIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.navigationController setRevealedState:JTRevealedStateNo];
+    
+//    ViewController *controller = [[ViewController alloc] init];
+//    controller.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
+//    controller.title = (NSString *)object;
+//    controller.leftSidebarViewController  = sidebarViewController;
+//    controller.leftSelectedIndexPath      = indexPath;
+//    controller.label.text = [NSString stringWithFormat:@"Selected %@ from LeftSidebarViewController", (NSString *)object];
+//    sidebarViewController.sidebarDelegate = controller;
+//    [self.navigationController setViewControllers:[NSArray arrayWithObject:controller] animated:NO];
+    
+}
+
+- (NSIndexPath *)lastSelectedIndexPathForSidebarViewController:(SidebarViewController *)sidebarViewController {
+    return 0;//self.leftSelectedIndexPath;
+}
+
+#pragma mark -
+#pragma mark Public methods
 
 - (void)loadDefaults {
     
@@ -160,5 +179,11 @@
     return currentUserInfo;
 }
 
+#pragma mark -
+#pragma mark Private methods
+
+- (void)revealLeftSidebar:(id)sender {
+    [self.navigationController toggleRevealState:JTRevealedStateLeft];
+}
 
 @end

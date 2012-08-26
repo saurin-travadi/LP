@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+  
 #import "SearchViewController.h"
 #import "CustomerListViewController.h"
 #import "ServiceConsumer.h"
@@ -13,7 +14,7 @@
 @implementation SearchViewController{
     NSMutableArray *_customers;
 }
-@synthesize phone, lastName, prospect, job;
+@synthesize phone, lastName, prospect, job, btnGo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+     self.btnGo.layer.cornerRadius = 8.0;
 }
 
 - (void)viewDidUnload

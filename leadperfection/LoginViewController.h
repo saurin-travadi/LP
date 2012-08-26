@@ -17,7 +17,7 @@
 - (void)successfullyLoggedIn;
 @end
 
-@interface LoginViewController : BaseUIViewController <ErrorOverlayDelegate> {
+@interface LoginViewController : BaseUIViewController  {
     
     
 }

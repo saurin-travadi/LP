@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701E646015E0A86D0009F750 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 701E645F15E0A86D0009F750 /* icon.png */; };
+		704175A015E1724700ABC6E7 /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7041759F15E1724700ABC6E7 /* ButtonMenu.png */; };
+		704175AD15E1766800ABC6E7 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175AC15E1766800ABC6E7 /* SidebarViewController.m */; };
+		704175B515E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175B215E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m */; };
+		704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */; };
+		706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B03B015E3CF6200B0D207 /* SettingsViewController.m */; };
+		70A1AA9C15E9D5BD00075864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */; };
 		BF39A78415DDB3CE004335AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78315DDB3CE004335AF /* UIKit.framework */; };
 		BF39A78615DDB3CE004335AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78515DDB3CE004335AF /* Foundation.framework */; };
 		BF39A78815DDB3CE004335AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78715DDB3CE004335AF /* CoreGraphics.framework */; };
@@ -43,6 +50,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		701E645F15E0A86D0009F750 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images/icon.png; sourceTree = "<group>"; };
+		7041759F15E1724700ABC6E7 /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
+		704175AC15E1766800ABC6E7 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		704175B015E176A700ABC6E7 /* JTRevealSidebarV2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTRevealSidebarV2Delegate.h; sourceTree = "<group>"; };
+		704175B115E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		704175B215E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
+		704175B315E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
+		704175BC15E1774900ABC6E7 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		706B03AF15E3CF6200B0D207 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		706B03B015E3CF6200B0D207 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF39A77F15DDB3CE004335AF /* leadperfection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leadperfection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF39A78315DDB3CE004335AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF39A78515DDB3CE004335AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A1AA9C15E9D5BD00075864 /* QuartzCore.framework in Frameworks */,
 				BF39A7CE15DDB584004335AF /* Security.framework in Frameworks */,
 				BF39A78415DDB3CE004335AF /* UIKit.framework in Frameworks */,
 				BF39A78615DDB3CE004335AF /* Foundation.framework in Frameworks */,
@@ -116,11 +136,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704175AF15E176A700ABC6E7 /* JTRevealSidebarV2 */ = {
+			isa = PBXGroup;
+			children = (
+				704175B015E176A700ABC6E7 /* JTRevealSidebarV2Delegate.h */,
+				704175B115E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.h */,
+				704175B215E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m */,
+				704175B315E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.h */,
+				704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */,
+			);
+			path = JTRevealSidebarV2;
+			sourceTree = "<group>";
+		};
 		BF39A77415DDB3CE004335AF = {
 			isa = PBXGroup;
 			children = (
+				704175AF15E176A700ABC6E7 /* JTRevealSidebarV2 */,
 				BF39A7E815DDBE48004335AF /* Settings.bundle */,
-				BF39A7CD15DDB584004335AF /* Security.framework */,
 				BF39A78915DDB3CE004335AF /* leadperfection */,
 				BF39A78215DDB3CE004335AF /* Frameworks */,
 				BF39A78015DDB3CE004335AF /* Products */,
@@ -138,12 +170,14 @@
 		BF39A78215DDB3CE004335AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFBD1E1D15DFF37C0098D90C /* JSON */,
 				BF39A7CA15DDB4A9004335AF /* MBProgressHUD.h */,
 				BF39A7CB15DDB4A9004335AF /* MBProgressHUD.m */,
+				BFBD1E1D15DFF37C0098D90C /* JSON */,
+				BF39A7CD15DDB584004335AF /* Security.framework */,
 				BF39A78315DDB3CE004335AF /* UIKit.framework */,
 				BF39A78515DDB3CE004335AF /* Foundation.framework */,
 				BF39A78715DDB3CE004335AF /* CoreGraphics.framework */,
+				70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +185,8 @@
 		BF39A78915DDB3CE004335AF /* leadperfection */ = {
 			isa = PBXGroup;
 			children = (
+				704175BC15E1774900ABC6E7 /* SidebarViewController.h */,
+				704175AC15E1766800ABC6E7 /* SidebarViewController.m */,
 				BF39A7EA15DDBF22004335AF /* leadperfection.entitlements */,
 				BF39A7E515DDBAC2004335AF /* AppDelegate.h */,
 				BF39A7E615DDBAC2004335AF /* AppDelegate.m */,
@@ -162,6 +198,8 @@
 				BFBD1E0D15DF4D2A0098D90C /* SearchViewController.m */,
 				BFBD1E1015DF52710098D90C /* CustomerListViewController.h */,
 				BFBD1E1115DF52710098D90C /* CustomerListViewController.m */,
+				706B03AF15E3CF6200B0D207 /* SettingsViewController.h */,
+				706B03B015E3CF6200B0D207 /* SettingsViewController.m */,
 				BF39A79515DDB3CE004335AF /* MainStoryboard.storyboard */,
 				BF39A78A15DDB3CE004335AF /* Supporting Files */,
 			);
@@ -219,6 +257,8 @@
 		BF39A7EE15DDC0BB004335AF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7041759F15E1724700ABC6E7 /* ButtonMenu.png */,
+				701E645F15E0A86D0009F750 /* icon.png */,
 				BF39A7F115DDC0DE004335AF /* house5a.jpg */,
 				BF39A7EF15DDC0C7004335AF /* lplogo_pos.gif */,
 			);
@@ -302,6 +342,8 @@
 				BF39A7ED15DDBFE0004335AF /* LocalSettings.plist in Resources */,
 				BF39A7F015DDC0C7004335AF /* lplogo_pos.gif in Resources */,
 				BF39A7F215DDC0DE004335AF /* house5a.jpg in Resources */,
+				701E646015E0A86D0009F750 /* icon.png in Resources */,
+				704175A015E1724700ABC6E7 /* ButtonMenu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +374,10 @@
 				BFBD1E2B15DFF37C0098D90C /* SBJsonBase.m in Sources */,
 				BFBD1E2C15DFF37C0098D90C /* SBJsonParser.m in Sources */,
 				BFBD1E2D15DFF37C0098D90C /* SBJsonWriter.m in Sources */,
+				704175AD15E1766800ABC6E7 /* SidebarViewController.m in Sources */,
+				704175B515E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
+				704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */,
+				706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PROVISIONING_PROFILE = "B7E84794-CA90-4A8E-B90C-48888752DC78";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -398,7 +444,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "B7E84794-CA90-4A8E-B90C-48888752DC78";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,10 +453,12 @@
 		BF39A7A115DDB3CE004335AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leadperfection/leadperfection-Prefix.pch";
 				INFOPLIST_FILE = "leadperfection/leadperfection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,10 +466,12 @@
 		BF39A7A215DDB3CE004335AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leadperfection/leadperfection-Prefix.pch";
 				INFOPLIST_FILE = "leadperfection/leadperfection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

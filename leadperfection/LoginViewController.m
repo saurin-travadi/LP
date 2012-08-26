@@ -58,6 +58,8 @@ NSString *localSettingsPath;
 
         [self performSelector:@selector(performLogin) withObject:nil afterDelay:0.1];
     }
+    
+    logOnButton.layer.cornerRadius = 8.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -145,10 +147,7 @@ NSString *localSettingsPath;
         if (((NextUITextField *) textField).nextField != nil)
             [((NextUITextField *) textField).nextField becomeFirstResponder];
         else {
-            [self startActivityIndicator];
-            
             [self login:nil];
-      
         }
     }
     

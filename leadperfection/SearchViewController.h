@@ -11,6 +11,7 @@
 
 @interface SearchViewController : BaseUIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnGo;
 @property (strong, nonatomic) IBOutlet UITextField *phone;
 @property (strong, nonatomic) IBOutlet UITextField *lastName;
 @property (strong, nonatomic) IBOutlet UITextField *prospect;
