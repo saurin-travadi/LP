@@ -16,7 +16,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string>http://global.iaai.com/</string>
+			<string>http://lptest.leadperfection.com/batch/lpservice.asmx</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
@@ -24,7 +24,7 @@
 			<key>KeyboardType</key>
 			<string>URL</string>
 			<key>Title</key>
-			<string>Base URL</string>
+			<string>Service URL</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 		</dict>
@@ -32,17 +32,19 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Team Name</string>
+			<string>Client Id</string>
 			<key>DefaultValue</key>
-			<string></string>
+			<string>1</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
-			<string>tfsTeamName_preference</string>
+			<string>clientId_preference</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>AutocapitalizationType</key>
 			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>Default</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

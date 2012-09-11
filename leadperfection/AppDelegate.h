@@ -23,6 +23,4 @@
 
 @end
 
-// Posted when the playback state changes, either programatically or by the user.
-NSString *const TeamVotesCountChangeNotification;
 

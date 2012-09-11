@@ -146,7 +146,9 @@
     if (!temp) {
         NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
     }
-    baseUrl = [temp objectForKey:@"BaseUrl"];   
+    baseUrl = [temp objectForKey:@"BaseUrl"];
+    
+    NSLog(@"%@",baseUrl);
 }
 
 -(void)setUserInfo:(UserInfo*)userInfo {

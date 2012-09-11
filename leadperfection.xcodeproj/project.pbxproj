@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7015240715FECD7000D20417 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7015240615FECD7000D20417 /* Utility.m */; };
 		701E646015E0A86D0009F750 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 701E645F15E0A86D0009F750 /* icon.png */; };
 		704175A015E1724700ABC6E7 /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7041759F15E1724700ABC6E7 /* ButtonMenu.png */; };
 		704175AD15E1766800ABC6E7 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175AC15E1766800ABC6E7 /* SidebarViewController.m */; };
 		704175B515E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175B215E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m */; };
 		704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */; };
+		704A4A6315FE644D008A86FD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 704A4A6215FE644D008A86FD /* Settings.bundle */; };
 		706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B03B015E3CF6200B0D207 /* SettingsViewController.m */; };
 		70A1AA9C15E9D5BD00075864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */; };
 		BF39A78415DDB3CE004335AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78315DDB3CE004335AF /* UIKit.framework */; };
@@ -31,7 +33,6 @@
 		BF39A7E315DDB9AD004335AF /* LoadingOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39A7E115DDB9AD004335AF /* LoadingOverlay.m */; };
 		BF39A7E415DDB9AD004335AF /* LoadingOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF39A7E215DDB9AD004335AF /* LoadingOverlay.xib */; };
 		BF39A7E715DDBAC2004335AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39A7E615DDBAC2004335AF /* AppDelegate.m */; };
-		BF39A7E915DDBE48004335AF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF39A7E815DDBE48004335AF /* Settings.bundle */; };
 		BF39A7EB15DDBF22004335AF /* leadperfection.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = BF39A7EA15DDBF22004335AF /* leadperfection.entitlements */; };
 		BF39A7ED15DDBFE0004335AF /* LocalSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF39A7EC15DDBFE0004335AF /* LocalSettings.plist */; };
 		BF39A7F015DDC0C7004335AF /* lplogo_pos.gif in Resources */ = {isa = PBXBuildFile; fileRef = BF39A7EF15DDC0C7004335AF /* lplogo_pos.gif */; };
@@ -50,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7015240515FECD7000D20417 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = leadperfection/Utility.h; sourceTree = "<group>"; };
+		7015240615FECD7000D20417 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = leadperfection/Utility.m; sourceTree = "<group>"; };
 		701E645F15E0A86D0009F750 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images/icon.png; sourceTree = "<group>"; };
 		7041759F15E1724700ABC6E7 /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
 		704175AC15E1766800ABC6E7 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		704175B315E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
 		704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
 		704175BC15E1774900ABC6E7 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		704A4A6215FE644D008A86FD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		706B03AF15E3CF6200B0D207 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		706B03B015E3CF6200B0D207 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -90,7 +94,6 @@
 		BF39A7E215DDB9AD004335AF /* LoadingOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingOverlay.xib; path = leadperfection/LoadingOverlay.xib; sourceTree = "<group>"; };
 		BF39A7E515DDBAC2004335AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF39A7E615DDBAC2004335AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF39A7E815DDBE48004335AF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = leadperfection/Settings.bundle; sourceTree = "<group>"; };
 		BF39A7EA15DDBF22004335AF /* leadperfection.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = leadperfection.entitlements; sourceTree = "<group>"; };
 		BF39A7EC15DDBFE0004335AF /* LocalSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocalSettings.plist; sourceTree = "<group>"; };
 		BF39A7EF15DDC0C7004335AF /* lplogo_pos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = lplogo_pos.gif; path = Images/lplogo_pos.gif; sourceTree = "<group>"; };
@@ -151,8 +154,8 @@
 		BF39A77415DDB3CE004335AF = {
 			isa = PBXGroup;
 			children = (
+				704A4A6215FE644D008A86FD /* Settings.bundle */,
 				704175AF15E176A700ABC6E7 /* JTRevealSidebarV2 */,
-				BF39A7E815DDBE48004335AF /* Settings.bundle */,
 				BF39A78915DDB3CE004335AF /* leadperfection */,
 				BF39A78215DDB3CE004335AF /* Frameworks */,
 				BF39A78015DDB3CE004335AF /* Products */,
@@ -222,6 +225,8 @@
 		BF39A7D015DDB607004335AF /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				7015240515FECD7000D20417 /* Utility.h */,
+				7015240615FECD7000D20417 /* Utility.m */,
 				BF39A7F315DDC38D004335AF /* BaseUIViewController.h */,
 				BF39A7F415DDC38D004335AF /* BaseUIViewController.m */,
 				BF39A7E015DDB9AD004335AF /* LoadingOverlay.h */,
@@ -337,13 +342,13 @@
 				BF39A79715DDB3CE004335AF /* MainStoryboard.storyboard in Resources */,
 				BF39A7DC15DDB6D9004335AF /* ErrorOverlay.xib in Resources */,
 				BF39A7E415DDB9AD004335AF /* LoadingOverlay.xib in Resources */,
-				BF39A7E915DDBE48004335AF /* Settings.bundle in Resources */,
 				BF39A7EB15DDBF22004335AF /* leadperfection.entitlements in Resources */,
 				BF39A7ED15DDBFE0004335AF /* LocalSettings.plist in Resources */,
 				BF39A7F015DDC0C7004335AF /* lplogo_pos.gif in Resources */,
 				BF39A7F215DDC0DE004335AF /* house5a.jpg in Resources */,
 				701E646015E0A86D0009F750 /* icon.png in Resources */,
 				704175A015E1724700ABC6E7 /* ButtonMenu.png in Resources */,
+				704A4A6315FE644D008A86FD /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +383,7 @@
 				704175B515E176A700ABC6E7 /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
 				704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */,
 				706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */,
+				7015240715FECD7000D20417 /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
