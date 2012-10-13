@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseUIViewController.h"
 
-@interface CustomerListViewController : UIViewController
+@interface CustomerListViewController : BaseUIViewController
 
 @property (nonatomic, strong) NSMutableArray *customers;
 @property (strong, nonatomic) IBOutlet UITableView *tableViewCustomer;

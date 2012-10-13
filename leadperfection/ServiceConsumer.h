@@ -22,4 +22,6 @@
 
 -(void)getCustomersByLastName:(NSString*)lastName withUserInfo:(UserInfo *)userInfo :(void (^)(id))Success;
 
+-(void)getLeadInfoByProspectId:(NSString*)prospectid withUserInfo:(UserInfo *)userInfo :(void (^)(id))Success;
+
 @end

@@ -9,6 +9,7 @@
 #import "CustomerListViewController.h"
 #import "ServiceConsumer.h"
 #import "Customer.h"
+#import "LeadInfoViewController.h"
 
 @implementation CustomerListViewController{
     NSMutableArray *customers;    
@@ -87,4 +88,16 @@
     
     return cell;
 }
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ( [segue.identifier isEqualToString:@"infoSegue"]) {
+        
+        [HUD hide:YES];
+        Customer *cust = [customers objectAtIndex:self.tableViewCustomer.indexPathForSelectedRow.row];
+        [[segue destinationViewController] setProspectID:cust.prospect];
+    }
+}
+
+
 @end

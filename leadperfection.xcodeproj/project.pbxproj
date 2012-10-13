@@ -15,6 +15,8 @@
 		704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 704175B415E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m */; };
 		704A4A6315FE644D008A86FD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 704A4A6215FE644D008A86FD /* Settings.bundle */; };
 		706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B03B015E3CF6200B0D207 /* SettingsViewController.m */; };
+		70759014162917F6005E5CF8 /* LeadInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70759013162917F6005E5CF8 /* LeadInfoViewController.m */; };
+		7075901816291CD5005E5CF8 /* Prospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075901716291CD5005E5CF8 /* Prospect.m */; };
 		70A1AA9C15E9D5BD00075864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */; };
 		BF39A78415DDB3CE004335AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78315DDB3CE004335AF /* UIKit.framework */; };
 		BF39A78615DDB3CE004335AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78515DDB3CE004335AF /* Foundation.framework */; };
@@ -65,6 +67,10 @@
 		704A4A6215FE644D008A86FD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		706B03AF15E3CF6200B0D207 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		706B03B015E3CF6200B0D207 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		70759012162917F6005E5CF8 /* LeadInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadInfoViewController.h; sourceTree = "<group>"; };
+		70759013162917F6005E5CF8 /* LeadInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadInfoViewController.m; sourceTree = "<group>"; };
+		7075901616291CD5005E5CF8 /* Prospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prospect.h; sourceTree = "<group>"; };
+		7075901716291CD5005E5CF8 /* Prospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prospect.m; sourceTree = "<group>"; };
 		70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF39A77F15DDB3CE004335AF /* leadperfection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leadperfection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF39A78315DDB3CE004335AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +207,8 @@
 				BFBD1E0D15DF4D2A0098D90C /* SearchViewController.m */,
 				BFBD1E1015DF52710098D90C /* CustomerListViewController.h */,
 				BFBD1E1115DF52710098D90C /* CustomerListViewController.m */,
+				70759012162917F6005E5CF8 /* LeadInfoViewController.h */,
+				70759013162917F6005E5CF8 /* LeadInfoViewController.m */,
 				706B03AF15E3CF6200B0D207 /* SettingsViewController.h */,
 				706B03B015E3CF6200B0D207 /* SettingsViewController.m */,
 				BF39A79515DDB3CE004335AF /* MainStoryboard.storyboard */,
@@ -255,6 +263,8 @@
 				BF39A80B15DF3709004335AF /* Consumer.m */,
 				BFBD1E1615DF5C3B0098D90C /* ServiceConsumer.h */,
 				BFBD1E1715DF5C3B0098D90C /* ServiceConsumer.m */,
+				7075901616291CD5005E5CF8 /* Prospect.h */,
+				7075901716291CD5005E5CF8 /* Prospect.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -384,6 +394,8 @@
 				704175B615E176A700ABC6E7 /* UIViewController+JTRevealSidebarV2.m in Sources */,
 				706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */,
 				7015240715FECD7000D20417 /* Utility.m in Sources */,
+				70759014162917F6005E5CF8 /* LeadInfoViewController.m in Sources */,
+				7075901816291CD5005E5CF8 /* Prospect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +427,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -430,7 +442,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -441,7 +452,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -450,7 +461,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -459,12 +469,12 @@
 		BF39A7A115DDB3CE004335AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leadperfection/leadperfection-Prefix.pch";
 				INFOPLIST_FILE = "leadperfection/leadperfection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -472,12 +482,12 @@
 		BF39A7A215DDB3CE004335AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saurin Travadi (B39P29YN4Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "leadperfection/leadperfection-Prefix.pch";
 				INFOPLIST_FILE = "leadperfection/leadperfection-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "71FEFAC6-DA2A-4759-AD89-B20FE159DD12";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

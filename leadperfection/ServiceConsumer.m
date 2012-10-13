@@ -10,6 +10,7 @@
 #import "Customer.h"
 #import "JSON.h"
 #import "Utility.h"
+#import "Prospect.h"
 
 @implementation ServiceConsumer {
     NSString *baseURL;
@@ -127,6 +128,43 @@
         _OnSearchSuccess(nil);
     }]; 
 }
+
+
+-(void)getLeadInfoByProspectId:(NSString*)prospectid withUserInfo:(UserInfo *)userInfo :(void (^)(id))Success {
+    _OnSearchSuccess = [Success copy];
+    
+    NSString *soapMsg = [NSString stringWithFormat:@"<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><GetLeadInfo xmlns=\"http://webservice.leadperfection.com/\"><clientid>%@</clientid><username>%@</username><password>%@</password><prospectid>%d</prospectid></GetLeadInfo></soap:Body></soap:Envelope>", userInfo.clientID,userInfo.userName,userInfo.password, [prospectid intValue]];
+    
+    NSURL *url = [NSURL URLWithString: baseURL];
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    
+    NSString *msgLength = [NSString stringWithFormat:@"%d", [soapMsg length]];
+    [req addValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [req addValue:@"http://webservice.leadperfection.com/GetLeadInfo" forHTTPHeaderField:@"SOAPAction"];
+    [req addValue:msgLength forHTTPHeaderField:@"Content-Length"];
+    [req setHTTPMethod:@"POST"];
+    [req setHTTPBody: [soapMsg dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [self getDataForElement:@"GetLeadInfoResult" Request:req :^(id json) {
+        NSLog(@"%@",[json description]);
+        
+        NSMutableArray *prospects = [[NSMutableArray alloc] init];
+        
+        NSArray *result = [json JSONValue];
+        for (id obj in result) {
+            
+            Prospect *pros = [[Prospect alloc] initWithDescr:[obj valueForKey:@"Descr"] StateValue:[obj valueForKey:@"StatValue"] ForProspect:[obj valueForKey:@"ProspectID"]];
+            [prospects addObject:pros];
+        }
+        
+        _OnSearchSuccess(prospects);
+    } :^(NSError *error) {
+        
+        _OnSearchSuccess(nil);
+    }]; 
+
+}
+
 
 - (void)missingBaseUrl
 {

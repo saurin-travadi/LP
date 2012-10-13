@@ -110,13 +110,17 @@ NSString *localSettingsPath;
     UserInfo *info = [[UserInfo alloc] initWithUserName:userName.text Password:password.text ClientID:@"" SiteURL:@"" ];
     [[[ServiceConsumer alloc] init] performLogin:info :^(bool* success) {
 
+        [HUD hide:YES];
+        
         if(*success){
+            
+            password.text = @"";
             
             [super setUserInfo:info];
             [self performSegueWithIdentifier:@"homeSegue" sender:self];
         }
         else {
-            [HUD hide:YES];
+
             
             UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Logon Failed"
                                                               message:@"The system was not able to log you on. Please check your User ID and Password and try again."
