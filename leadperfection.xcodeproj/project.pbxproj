@@ -17,6 +17,7 @@
 		706B03B115E3CF6200B0D207 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B03B015E3CF6200B0D207 /* SettingsViewController.m */; };
 		70759014162917F6005E5CF8 /* LeadInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70759013162917F6005E5CF8 /* LeadInfoViewController.m */; };
 		7075901816291CD5005E5CF8 /* Prospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075901716291CD5005E5CF8 /* Prospect.m */; };
+		7075901E162A08E5005E5CF8 /* SidebarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7075901D162A08E5005E5CF8 /* SidebarViewController.xib */; };
 		70A1AA9C15E9D5BD00075864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */; };
 		BF39A78415DDB3CE004335AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78315DDB3CE004335AF /* UIKit.framework */; };
 		BF39A78615DDB3CE004335AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF39A78515DDB3CE004335AF /* Foundation.framework */; };
@@ -71,6 +72,7 @@
 		70759013162917F6005E5CF8 /* LeadInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadInfoViewController.m; sourceTree = "<group>"; };
 		7075901616291CD5005E5CF8 /* Prospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prospect.h; sourceTree = "<group>"; };
 		7075901716291CD5005E5CF8 /* Prospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prospect.m; sourceTree = "<group>"; };
+		7075901D162A08E5005E5CF8 /* SidebarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarViewController.xib; sourceTree = "<group>"; };
 		70A1AA9B15E9D5BD00075864 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF39A77F15DDB3CE004335AF /* leadperfection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leadperfection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF39A78315DDB3CE004335AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -194,8 +196,6 @@
 		BF39A78915DDB3CE004335AF /* leadperfection */ = {
 			isa = PBXGroup;
 			children = (
-				704175BC15E1774900ABC6E7 /* SidebarViewController.h */,
-				704175AC15E1766800ABC6E7 /* SidebarViewController.m */,
 				BF39A7EA15DDBF22004335AF /* leadperfection.entitlements */,
 				BF39A7E515DDBAC2004335AF /* AppDelegate.h */,
 				BF39A7E615DDBAC2004335AF /* AppDelegate.m */,
@@ -211,6 +211,9 @@
 				70759013162917F6005E5CF8 /* LeadInfoViewController.m */,
 				706B03AF15E3CF6200B0D207 /* SettingsViewController.h */,
 				706B03B015E3CF6200B0D207 /* SettingsViewController.m */,
+				704175BC15E1774900ABC6E7 /* SidebarViewController.h */,
+				704175AC15E1766800ABC6E7 /* SidebarViewController.m */,
+				7075901D162A08E5005E5CF8 /* SidebarViewController.xib */,
 				BF39A79515DDB3CE004335AF /* MainStoryboard.storyboard */,
 				BF39A78A15DDB3CE004335AF /* Supporting Files */,
 			);
@@ -359,6 +362,7 @@
 				701E646015E0A86D0009F750 /* icon.png in Resources */,
 				704175A015E1724700ABC6E7 /* ButtonMenu.png in Resources */,
 				704A4A6315FE644D008A86FD /* Settings.bundle in Resources */,
+				7075901E162A08E5005E5CF8 /* SidebarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

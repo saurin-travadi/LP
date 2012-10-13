@@ -75,11 +75,11 @@
 - (IBAction)search:(id)sender{
     //perform additional logic
     
-    HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    HUD.dimBackground = YES;
-    
-    if(lastName.text != NULL)
+    if(![lastName.text isEqualToString:@""])
     {
+        HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        HUD.dimBackground = YES;
+        
         [[[ServiceConsumer alloc] init] getCustomersByLastName:lastName.text withUserInfo:[super getUserInfo] :^(id json) {
             
             if([json count]==0){

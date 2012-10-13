@@ -235,17 +235,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HLH-Po-IBt">
-                                                    <rect key="frame" x="10" y="11" width="35" height="21"/>
+                                                    <rect key="frame" x="10" y="12" width="31" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3c-e5-IOL">
-                                                    <rect key="frame" x="266" y="11" width="44" height="21"/>
+                                                    <rect key="frame" x="271" y="12" width="39" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
@@ -295,72 +295,72 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="LastName FirstName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="prB-jb-cdr">
-                                                            <rect key="frame" x="102" y="30" width="170" height="21"/>
+                                                            <rect key="frame" x="102" y="30" width="300" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="twM-Rt-MDb">
-                                                            <rect key="frame" x="102" y="52" width="170" height="21"/>
+                                                            <rect key="frame" x="102" y="52" width="300" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="City, State Zip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Bsd-8a-B2z">
-                                                            <rect key="frame" x="102" y="74" width="170" height="21"/>
+                                                            <rect key="frame" x="102" y="74" width="300" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RQq-pK-Sfy">
-                                                            <rect key="frame" x="102" y="97" width="170" height="21"/>
+                                                            <rect key="frame" x="102" y="97" width="300" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" text="ProspectId" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="acO-s1-Vu2">
-                                                            <rect key="frame" x="102" y="9" width="71" height="21"/>
+                                                            <rect key="frame" x="102" y="9" width="300" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DPL-CU-lyd">
-                                                            <rect key="frame" x="25" y="30" width="54" height="21"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DPL-CU-lyd">
+                                                            <rect key="frame" x="14" y="30" width="80" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ch6-7H-eOa">
-                                                            <rect key="frame" x="25" y="52" width="68" height="21"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ch6-7H-eOa">
+                                                            <rect key="frame" x="14" y="52" width="80" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address2:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hft-PR-V8q">
-                                                            <rect key="frame" x="24" y="74" width="78" height="21"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address2:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hft-PR-V8q">
+                                                            <rect key="frame" x="14" y="74" width="80" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EU5-PZ-aYJ">
-                                                            <rect key="frame" x="25" y="97" width="54" height="21"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EU5-PZ-aYJ">
+                                                            <rect key="frame" x="14" y="97" width="80" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prospect#:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xFE-qm-PW0">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prospect#:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xFE-qm-PW0">
                                                             <rect key="frame" x="14" y="9" width="80" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>

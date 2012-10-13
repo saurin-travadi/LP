@@ -14,7 +14,7 @@
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+    self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         // Custom initialization
     }
@@ -48,11 +48,22 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    switch (section) {
+        case 0:
+            return 1;
+            break;
+        case 1:
+            return 1;
+            break;
+        default:
+            return 2;
+            break;
+    }
     return 2;
 }
 
